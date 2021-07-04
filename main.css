@@ -1,0 +1,257 @@
+/*Style Sheet*/
+
+@font-face {
+  font-family: 'Nanum Brush Script', cursive;
+  src: url('NanumBrushScript-Regular.ttf');
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #6CC092;
+}
+
+a {
+  color: #6CC092;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header .name {
+  margin: 0px;
+  font-size: 55px !important;
+  font-family: 'Nanum Brush Script', cursive;
+}
+
+header, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6  {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+
+}
+header {
+  background-image: url("images/cityatnight.jpg");
+  min-height: 100%;
+}
+.bgimg-1 {
+  background-image: url("images/palacethree.jpg");
+}
+
+.bgimg-2 {
+  background-image: url("images/insaone.jpg");
+}
+
+.bgimg-3 {
+  background-image: url("images/memthree.jpg");
+}
+.bgimg-4 {
+  background-image: url("images/lotteone.jpg");
+}
+.bgimg-5 {
+  background-image: url("images/parkone.jpg");
+}
+.bgimg-6 {
+  background-image: url("images/throne.jpg");
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.caption .text {
+  color: #000;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.description {
+  color:#ddd;
+  background-color: #282828;
+  padding:50px 80px;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 30% 70%;
+ }
+
+.box {
+  color: #fff;
+  padding: 20px;
+  background-color: #444;
+  border-top: 1px solid white;
+  border-left: 1px solid #fff;
+}
+
+.box:nth-child(even) {
+  border-right: 1px solid #fff;
+}
+
+.box:nth-last-of-type(-n+2) {
+  border-bottom: 1px solid #fff;
+}
+
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.two {
+  grid-column: 2;
+  grid-row: 1;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2;
+}
+.four {
+  grid-column: 2;
+  grid-row: 2;
+}
+.five {
+  grid-column: 1;
+  grid-row: 3;
+}
+.six {
+  grid-column: 2;
+  grid-row: 3;
+}
+.seven {
+  grid-column: 1;
+  grid-row: 4;
+}
+.eight {
+  grid-column: 2;
+  grid-row: 4;
+}
+.nine {
+  grid-column: 1;
+  grid-row: 5;
+}
+.ten {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+      background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-device-width: 505px) {
+  .table {
+    display: block;
+  }
+  .box {
+    border-top: 1px solid white;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+
+  .box:nth-child(even) {
+    background-color: inherit;
+  }
+
+  .box:nth-last-of-type(-n+2) {
+    border-bottom: none;
+  }
+
+  .box:last-child {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+@media (max-width: 505px) {
+  .description {
+    padding: 25px 40px;
+  }
+  
+  .caption span.text {
+    display: inline-block;
+  }
+
+  .table {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .box {
+    border-top: 1px solid white;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+
+  .box:nth-child(even) {
+    background-color: inherit;
+  }
+
+  .box:nth-last-of-type(-n+2) {
+    border-bottom: none;
+  }
+
+  .box:last-child {
+    border-bottom: 1px solid #fff;
+  }
+
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .two {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .three {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .four {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .five {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .six {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  .seven {
+    grid-column: 1;
+    grid-row: 7;
+  }
+  .eight {
+    grid-column: 1;
+    grid-row: 8;
+  }
+  .nine {
+    grid-column: 1;
+    grid-row: 9;
+  }
+  .ten {
+    grid-column: 1;
+    grid-row: 10;
+  }
+}
